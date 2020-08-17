@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: Octopus
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: "[classpath:/, classpath:/config, classpath:/config/{application}, classpath:/config/{application}/{profile}]"
+  devtools:
+    add-properties: false
+
+logging:
+  level:
+    org:
+      springframework:
+        cloud: debug
+        web: debug
+server:
+  port: 9000
+
+#Don't hardcode it
+encrypt:
+  key: secret1234

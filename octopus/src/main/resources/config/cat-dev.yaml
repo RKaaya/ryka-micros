@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: cat
+
+test:
+  name: '{cipher}0277c0abf37dbd55b122d627ed7fd2984550b5e3ea3534cb58fdf9a0351bd574'
