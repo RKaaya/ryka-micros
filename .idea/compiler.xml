@@ -14,6 +14,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="amoeba" options="-parameters" />
       <module name="cat" options="-parameters" />
       <module name="octopus" options="-parameters" />
     </option>

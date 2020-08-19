@@ -3,10 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.3.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>com.rkaaya</groupId>
+        <artifactId>amoeba</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.rkaaya</groupId>
     <artifactId>cat</artifactId>
@@ -15,7 +14,6 @@
     <description>Simple Rest Endpoints</description>
 
     <properties>
-        <java.version>14</java.version>
         <spring-cloud.version>Hoxton.SR7</spring-cloud.version>
     </properties>
 
@@ -63,7 +61,7 @@
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-ui</artifactId>
-            <version>1.2.32</version>
+            <version>1.4.4</version>
         </dependency>
     </dependencies>
 

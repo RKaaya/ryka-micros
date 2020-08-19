@@ -1,3 +1,6 @@
+server:
+  port: 9000
+
 spring:
   application:
     name: Octopus
@@ -7,7 +10,11 @@ spring:
     config:
       server:
         native:
-          searchLocations: "[classpath:/, classpath:/config, classpath:/config/{application}, classpath:/config/{application}/{profile}]"
+          searchLocations: "[classpath:/, classpath:/applications, classpath:/applications/{application}, classpath:/applications/{application}/{profile}]"
+# For git config server
+#        git:
+#          uri: ssh://localhost/config-repo
+#          clone-on-start: true
   devtools:
     add-properties: false
 
@@ -17,8 +24,6 @@ logging:
       springframework:
         cloud: debug
         web: debug
-server:
-  port: 9000
 
 #Don't hardcode it
 encrypt:

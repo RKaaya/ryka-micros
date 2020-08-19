@@ -12,6 +12,7 @@
 
     <modules>
         <module>octopus</module>
+        <module>cat</module>
     </modules>
 
     <groupId>com.rkaaya</groupId>
